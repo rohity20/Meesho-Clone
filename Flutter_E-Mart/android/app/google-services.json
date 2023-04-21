@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "853148703186",
+    "project_id": "meesho-13cc3",
+    "storage_bucket": "meesho-13cc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853148703186:android:9c1329ac1c90102956100b",
+        "android_client_info": {
+          "package_name": "com.example.emart_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853148703186-er8ih868t1at4on5nij5i0d481mnn387.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.emart_app",
+            "certificate_hash": "6c3481d486914e552aece33fdb28d66e295d6182"
+          }
+        },
+        {
+          "client_id": "853148703186-c38e1tqfog5klat0ee29oiakdh721p5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd1qVOFHpMM7wbEELWEI5v0ZwAgzJ8vqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853148703186-c38e1tqfog5klat0ee29oiakdh721p5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

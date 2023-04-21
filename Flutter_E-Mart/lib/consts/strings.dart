@@ -19,7 +19,8 @@ const loginWith = "Log in with";
 const privacyPolicy = "Privacy Policy";
 const termAndCond = "Term and Conditions";
 const alreadyHaveAccount = "Already have an account? ";
-
+const loggedin = "Logged in successfully";
+const loggedout = "Logged out successfully";
 //home string
 const home = "Home",
     categories = "Categories",
