@@ -35,9 +35,11 @@ class _SignupScreenState extends State<SignupScreen> {
       body: Center(
         child: Column(children: [
           (context.screenHeight * 0.1).heightBox,
-          applogoWidget(),
+          // applogoWidget(),
+          meeshologoWidget(),
           10.heightBox,
-          "Join the $appname".text.fontFamily(bold).white.size(18).make(),
+          "Join the $appname".text.fontFamily(bold).pink500.size(18).make(),
+          //  "Join the $appname".text.fontFamily(bold).white.size(18).make(),
           10.heightBox,
           Obx(() => Column(
                     children: [

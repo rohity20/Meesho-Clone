@@ -14,6 +14,7 @@ class ItemDetails extends StatelessWidget {
     return Scaffold(
       backgroundColor: whiteColor,
       appBar: AppBar(
+        backgroundColor: Colors.pinkAccent,
         title: title!.text.white.color(darkFontGrey).fontFamily(bold).make(),
         actions: [
           IconButton(
@@ -117,7 +118,8 @@ class ItemDetails extends StatelessWidget {
                       children: [
                         SizedBox(
                           width: 100,
-                          child: "Color: ".text.color(textfieldGrey).make(),
+                          // child: "Color: ".text.color(textfieldGrey).make(),
+                          child: "Color: ".text.make(),
                         ),
                         Row(
                           children: List.generate(
@@ -138,7 +140,8 @@ class ItemDetails extends StatelessWidget {
                       children: [
                         SizedBox(
                           width: 100,
-                          child: "Quantity: ".text.color(textfieldGrey).make(),
+                          // child: "Quantity: ".text.color(textfieldGrey).make(),
+                          child: "Quantity: ".text.make(),
                         ),
                         Row(
                           children: [
@@ -154,7 +157,8 @@ class ItemDetails extends StatelessWidget {
                             IconButton(
                                 onPressed: () {}, icon: const Icon(Icons.add)),
                             10.widthBox,
-                            "(0 available)".text.color(textfieldGrey).make(),
+                            // "(0 available)".text.color(textfieldGrey).make(),
+                            "(0 available)".text.make(),
                           ],
                         ),
                       ],
@@ -165,7 +169,8 @@ class ItemDetails extends StatelessWidget {
                       children: [
                         SizedBox(
                           width: 100,
-                          child: "Total: ".text.color(textfieldGrey).make(),
+                          // child: "Total: ".text.color(textfieldGrey).make(),
+                          child: "Total: ".text.make(),
                         ),
                         "\$0.00"
                             .text

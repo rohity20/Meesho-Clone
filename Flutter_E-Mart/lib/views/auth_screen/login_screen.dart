@@ -24,9 +24,11 @@ class LoginScreen extends StatelessWidget {
       body: Center(
         child: Column(children: [
           (context.screenHeight * 0.1).heightBox,
-          applogoWidget(),
+          // applogoWidget(),
+          meeshologoWidget(),
           10.heightBox,
-          "Log in to $appname".text.fontFamily(bold).white.size(18).make(),
+          "Log in to $appname".text.fontFamily(bold).pink500.size(18).make(),
+          // "Log in to $appname".text.fontFamily(bold).white.size(18).make(),
           10.heightBox,
           Obx(() => Column(
                     children: [

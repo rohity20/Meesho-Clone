@@ -1,6 +1,9 @@
 import 'package:emart_app/consts/consts.dart';
 import 'package:emart_app/consts/lists.dart';
 import 'package:emart_app/widgets_common/home_buttons.dart';
+import 'package:get/get.dart';
+
+import '../category_screen/item_details.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -170,7 +173,10 @@ class HomeScreen extends StatelessWidget {
                           .margin(const EdgeInsets.symmetric(horizontal: 4))
                           .roundedSM
                           .padding(const EdgeInsets.all(12))
-                          .make();
+                          .make()
+                          .onTap(() {
+                        Get.to(() => const ItemDetails(title: "Dummy item"));
+                      });
                     },
                   )
                 ],

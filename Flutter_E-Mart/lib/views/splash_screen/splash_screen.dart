@@ -44,21 +44,24 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: redColor,
+      backgroundColor: whiteColor,
       body: Center(
           child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Align(
-              alignment: Alignment.topLeft,
-              child: Image.asset(icSplashBg, width: 300)),
-          20.heightBox,
-          applogoWidget(),
-          10.heightBox,
-          appname.text.fontFamily(bold).size(22).white.make(),
-          appversion.text.white.make(),
-          const Spacer(),
-          credits.text.white.fontFamily(semibold).make(),
-          30.heightBox,
+              // alignment: Alignment.topLeft,
+              // child: Image.asset(icSplashBg, width: 300)
+              alignment: Alignment.center,
+              child: Image.asset(icAppLogo, width: 300)),
+          // 60.heightBox,
+          // applogoWidget(),
+          // 10.heightBox,
+          // appname.text.fontFamily(bold).size(22).white.make(),
+          // appversion.text.white.make(),
+          // const Spacer(),
+          // credits.text.white.fontFamily(semibold).make(),
+          // 30.heightBox,
         ],
       )),
     );

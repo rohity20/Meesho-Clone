@@ -12,3 +12,14 @@ Widget applogoWidget() {
       .rounded
       .make();
 }
+
+Widget meeshologoWidget() {
+  //using velocity X here
+  return Image.asset(icMeeshoLogo)
+      .box
+      .white
+      .size(77, 77)
+      .padding(const EdgeInsets.all(8))
+      .rounded
+      .make();
+}

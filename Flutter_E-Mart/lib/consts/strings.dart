@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 
-const appname = "eMart";
+const appname = "meesho";
 const appversion = "Version 1.0.0";
 const credits = "@Baaba Devs";
 const email = "Email";

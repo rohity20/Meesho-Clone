@@ -20,7 +20,8 @@ class ProfileScreen extends StatelessWidget {
           //edit profile button
           const Align(
                   alignment: Alignment.topRight,
-                  child: Icon(Icons.edit, color: whiteColor))
+                  // child: Icon(Icons.edit, color: whiteColor))
+                  child: Icon(Icons.edit))
               .onTap(() {}),
           Row(
             children: [
@@ -34,20 +35,23 @@ class ProfileScreen extends StatelessWidget {
                   child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  "Dummy User".text.fontFamily(semibold).white.make(),
-                  "customer@example.com".text.white.make(),
+                  // "Dummy User".text.fontFamily(semibold).white.make(),
+                  // "customer@example.com".text.white.make(),
+                  "Dummy User".text.fontFamily(semibold).make(),
+                  "customer@example.com".text.make(),
                 ],
               )),
               OutlinedButton(
                 style: OutlinedButton.styleFrom(
                     side: const BorderSide(
-                  color: whiteColor,
+                  // color: whiteColor,
+                  color: Colors.pink,
                 )),
                 onPressed: () async {
                   await Get.put(AuthController()).signoutMethod(context);
                   Get.offAll(() => const LoginScreen());
                 },
-                child: logout.text.fontFamily(semibold).white.make(),
+                child: logout.text.fontFamily(semibold).pink500.make(),
               )
             ],
           ),

@@ -15,6 +15,7 @@ class CategoryDetails extends StatelessWidget {
     return bgWidget(
         child: Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.pinkAccent,
         title: title!.text.fontFamily(bold).white.make(),
       ),
       body: Container(
@@ -30,10 +31,12 @@ class CategoryDetails extends StatelessWidget {
                         .text
                         .size(12)
                         .fontFamily(semibold)
-                        .color(darkFontGrey)
+                        // .color(darkFontGrey)
+                        .color(whiteColor)
                         .makeCentered()
                         .box
-                        .white
+                        // .white
+                        .pink500
                         .rounded
                         .size(120, 60)
                         .margin(const EdgeInsets.symmetric(horizontal: 4))
