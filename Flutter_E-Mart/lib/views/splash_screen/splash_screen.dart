@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
   //creating a method to change screen
 
   changeScreen() {
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 6), () {
       //using getX
       // Get.to(() => const LoginScreen());
 
@@ -54,7 +54,7 @@ class _SplashScreenState extends State<SplashScreen> {
               // child: Image.asset(icSplashBg, width: 300)
               alignment: Alignment.center,
               child: Image.asset(icAppLogo, width: 300)),
-          // 60.heightBox,
+          60.heightBox,
           // applogoWidget(),
           // 10.heightBox,
           // appname.text.fontFamily(bold).size(22).white.make(),

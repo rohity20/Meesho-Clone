@@ -39,5 +39,12 @@ const categoryImages = [
 
 // const itemDetailButtonList = [video, reviews, privacyPolicy, returnpolicy, supportPolicy];
 
-const profileButtonList = [orders, wishlist, messages];
-const profileButtonIcon = [icOrder, icOrder, icMessages];
+const profileButtonList = [orders, wishlist, mycart, payments, messages, share];
+const profileButtonIcon = [
+  icOrder,
+  icHeart,
+  icCart,
+  icWallet,
+  icMessages,
+  icShare
+];

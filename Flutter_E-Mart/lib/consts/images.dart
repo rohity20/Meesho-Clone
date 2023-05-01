@@ -1,4 +1,6 @@
 //icons
+import 'package:emart_app/consts/consts.dart';
+
 const icAdd = "assets/icons/add.png";
 const icAppLogo = "assets/icons/app_logo.png";
 
@@ -52,7 +54,7 @@ const icTwitterLogo = "assets/icons/twitter_logo.png";
 const icWallet = "assets/icons/wallet.png";
 const icWhiteTick = "assets/icons/white_tick.png";
 const icWholeSale = "assets/icons/wholesale.png";
-
+const icShare = "assets/icons/share.png";
 //images
 
 const imgBackground = "assets/icons/bg.png";

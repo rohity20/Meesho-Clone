@@ -2,14 +2,14 @@ import 'package:flutter/foundation.dart';
 
 const appname = "meesho";
 const appversion = "Version 1.0.0";
-const credits = "@Baaba Devs";
+const credits = "@Rohit Yadav";
 const email = "Email";
 const emailHint = "admin@admin.com";
 const password = "Password";
 const passwordHint = "******";
 const retypePassword = "Retype Password";
 const name = "Name";
-const nameHint = "Baaba Devs";
+const nameHint = "Rohit Yadav";
 const forgetPass = "Forget Password";
 const login = "Log in";
 const logout = "Log out";
@@ -21,6 +21,7 @@ const termAndCond = "Term and Conditions";
 const alreadyHaveAccount = "Already have an account? ";
 const loggedin = "Logged in successfully";
 const loggedout = "Logged out successfully";
+
 //home string
 const home = "Home",
     categories = "Categories",
@@ -48,4 +49,9 @@ const womenClothing = "Women Clothing",
     furniture = "Furniture";
 
 // profile strings
-const wishlist = "My Wishlist", orders = "My Orders", messages = "Messages";
+const wishlist = "My Wishlist",
+    orders = "My Orders",
+    messages = "Messages",
+    payments = "My Payments",
+    share = "My Shared Catalogs",
+    mycart = "My Cart";
