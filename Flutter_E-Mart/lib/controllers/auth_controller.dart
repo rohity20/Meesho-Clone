@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 
 class AuthController extends GetxController {
   var isloading = false.obs;
-  
+
   //textcontrollers
   var emailController = TextEditingController();
   var passwordController = TextEditingController();
@@ -45,7 +45,10 @@ class AuthController extends GetxController {
       'password': password,
       'email': email,
       'imageUrl': '',
-      'id': currentUser!.uid
+      'id': currentUser!.uid,
+      'cart_count': "00",
+      'wishlist_count': "00",
+      'order_count': "00",
     });
   }
 

@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 
 const appname = "meesho";
-const appversion = "Version 1.0.0";
+const appversion = "Version: 15.1 (474)";
 const credits = "@Rohit Yadav";
 const email = "Email";
 const emailHint = "admin@admin.com";
@@ -53,5 +53,5 @@ const wishlist = "My Wishlist",
     orders = "My Orders",
     messages = "Messages",
     payments = "My Payments",
-    share = "My Shared Catalogs",
+    share = "My Shared Products",
     mycart = "My Cart";
