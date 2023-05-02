@@ -35,7 +35,8 @@ const searchanything = "Search anything...",
     topsellers = "Top Sellers",
     brand = "Brand",
     topCategories = "Top Categories",
-    featuredCategories = "Featured Categories";
+    featuredCategories = "Featured Categories",
+    allproducts = "All Products";
 
 //category strings
 const womenClothing = "Women Clothing",
@@ -46,7 +47,9 @@ const womenClothing = "Women Clothing",
     sports = "Sports",
     jewelery = "Jewelery",
     cellphone = "Cellphone & Tab",
-    furniture = "Furniture";
+    furniture = "Furniture",
+    vehicles = "Vehicles",
+    instruments = "Instruments";
 
 // profile strings
 const wishlist = "My Wishlist",

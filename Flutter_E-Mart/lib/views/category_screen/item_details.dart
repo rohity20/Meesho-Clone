@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:emart_app/consts/consts.dart';
 import 'package:emart_app/widgets_common/our_button.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -6,8 +7,20 @@ import 'package:get/get.dart';
 
 class ItemDetails extends StatelessWidget {
   final String? title;
+  final String? imgs;
+  final String? price;
+  final String? quantity;
+  final String? desc;
 
-  const ItemDetails({super.key, required this.title});
+  // const ItemDetails({super.key, required this.title, required QueryDocumentSnapshot<Object?> data});
+  const ItemDetails(
+      {super.key,
+      required this.title,
+      required this.imgs,
+      required this.price,
+      required this.quantity,
+      required this.desc,
+      required QueryDocumentSnapshot<Object?> data});
 
   @override
   Widget build(BuildContext context) {
@@ -46,8 +59,9 @@ class ItemDetails extends StatelessWidget {
                   itemCount: 3,
                   aspectRatio: 16 / 9,
                   itemBuilder: (context, index) {
-                    return Image.asset(
-                      imgFc5,
+                    return Image.network(
+                      // imgFc5,
+                      imgs!,
                       width: double.infinity,
                       fit: BoxFit.cover,
                     );
@@ -73,12 +87,17 @@ class ItemDetails extends StatelessWidget {
                 ),
 
                 10.heightBox,
-                "\$30,000"
-                    .text
-                    .color(redColor)
-                    .fontFamily(bold)
-                    .size(18)
-                    .make(),
+                Row(
+                  children: [
+                    "\$".text.color(redColor).fontFamily(bold).size(18).make(),
+                    price!.text
+                        .color(redColor)
+                        .fontFamily(bold)
+                        .size(18)
+                        .make(),
+                  ],
+                ),
+                // price!.text.color(redColor).fontFamily(bold).size(18).make(),
                 10.heightBox,
 
                 Row(
@@ -158,7 +177,9 @@ class ItemDetails extends StatelessWidget {
                                 onPressed: () {}, icon: const Icon(Icons.add)),
                             10.widthBox,
                             // "(0 available)".text.color(textfieldGrey).make(),
-                            "(0 available)".text.make(),
+                            // "(0 available)".text.make(),
+                            quantity!.text.make(),
+                            " available".text.make()
                           ],
                         ),
                       ],
@@ -192,10 +213,8 @@ class ItemDetails extends StatelessWidget {
                     .fontFamily(semibold)
                     .make(),
                 10.heightBox,
-                "This is a dummy item and dummy description here...aassddḍ dssda dsds sdsdsd dsdsdsd"
-                    .text
-                    .color(darkFontGrey)
-                    .make(),
+                // "This is a dummy item and dummy description here...aassddḍ dssda dsds sdsdsd dsdsdsd"
+                desc!.text.color(darkFontGrey).make(),
               ],
             )),
           )),

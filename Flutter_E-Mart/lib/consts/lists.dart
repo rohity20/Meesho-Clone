@@ -14,14 +14,14 @@ const featuredImages2 = [imgS4, imgS5, imgS6];
 
 const categoriesList = [
   // womenDress,
-  womenClothing,
   menClothingFashion,
   compAccess,
-  automobile,
+  vehicles,
   kidtoys,
   sports,
-  jewelery,
   cellphone,
+  jewelery,
+  instruments,
   furniture
 ];
 

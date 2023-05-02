@@ -8,4 +8,9 @@ class FirestoreServices {
         .where('id', isEqualTo: uid)
         .snapshots();
   }
+
+  //all products
+  static allproducts() {
+    return firestore.collection(productsCollection).snapshots();
+  }
 }

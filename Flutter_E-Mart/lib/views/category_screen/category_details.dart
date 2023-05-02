@@ -83,16 +83,17 @@ class CategoryDetails extends StatelessWidget {
                       10.heightBox,
                     ],
                   )
-                      .box
-                      .white
-                      .margin(const EdgeInsets.symmetric(horizontal: 4))
-                      .roundedSM
-                      .outerShadowSm
-                      .padding(const EdgeInsets.all(12))
-                      .make()
-                      .onTap(() {
-                    Get.to(() => const ItemDetails(title: "Dummy item"));
-                  });
+                          .box
+                          .white
+                          .margin(const EdgeInsets.symmetric(horizontal: 4))
+                          .roundedSM
+                          .outerShadowSm
+                          .padding(const EdgeInsets.all(12))
+                          .make()
+                      //     .onTap(() {
+                      //   Get.to(() => const ItemDetails(title: "Dummy item"));
+                      // })
+                      ;
                 })),
             // )
           )
